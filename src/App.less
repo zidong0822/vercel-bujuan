@@ -1,0 +1,272 @@
+@import '~antd/dist/antd.less';
+html {
+  font-size: calc(100vw / 14.40);
+  user-select: none;
+  min-width: 1200px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+  min-width: 1200px;
+}
+.choose-file{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  width: 9rem;
+  height: 2.44rem;
+  margin-top: 0.5rem;
+  background-color: #FAFAFA;
+  border: 0.01rem solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 0.02rem
+}
+.choose-image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.35rem;
+  height: 0.35rem;
+  margin-top: 0.22rem;
+}
+.choose-title{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.16rem;
+  line-height: 0.24rem;
+  margin-top: 0.26rem;
+  color: rgba(0, 0, 0, 0.85);
+}
+.choose-tip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.45);
+}
+.steps-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 9rem;
+  height: 1rem;
+  margin-top: 0.3rem;
+  .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon{
+    background: #135AF5;
+    border-color: #135AF5;
+  }
+  .ant-steps-item-finish .ant-steps-item-title::after{
+    background-color: #135AF5 !important;
+    border-color: #135AF5 !important;
+  }
+  .ant-steps-item-finish .ant-steps-item-icon{
+    border-color: #135AF5;
+  }
+  .ant-steps-icon{
+    :nth-child(1){
+      :nth-child(1){
+        fill: #135AF5;
+      }
+    }
+  }
+}
+.steps{
+  min-width: 900px;
+}
+
+.ant-table-pagination {
+  display: none !important;
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+  background: #0040CB;
+  border-color: #0040CB;
+}
+.ant-btn-link:hover, .ant-btn-link:focus{
+  color: #0040CB;
+}
+.ant-pagination-item-active a {
+  color: #135AF5;
+}
+.ant-pagination-item-active{
+  border-color: #135AF5;
+}
+.ant-pagination-item-active:hover, .ant-pagination-item-active:focus{
+  border-color: #0040CB;
+}
+.ant-pagination-item-active a:hover, .ant-pagination-item-active a:focus{
+  border-color: #0040CB;
+}
+
+.input-file{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.input-choose-file{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.download-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 9rem;
+  margin-top: 0.3rem;
+}
+.download-all{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download-all-button{
+  width: 2.47rem;
+  height: 0.44rem;
+  background: #135AF5;
+  border-color: #135AF5;
+  border-width: 0;
+  .loader{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    .dot{
+      background: #FFFFFF;
+      opacity: 0.3;
+    }
+  }
+}
+.clear-button{
+  position: absolute;
+  left: 2.47rem;
+  color: #135AF5;
+}
+.download-single{
+  width: 9rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.download-button{
+  color: #135AF5;
+  width: 60px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center
+}
+.delete-button{
+  color: #C41A1A;
+}
+.free-trial{
+  position: absolute;
+  right: 86px;
+  width: 72px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  background: #135AF5;
+  border-color: #135AF5;
+  border-radius: 12px;
+  color: #fff;
+  padding: 0;
+}
+.login{
+  position: absolute;
+  white-space: nowrap;
+  right: 40px;
+  width: 28px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 0;
+  border: 0;
+}
+.viptip{
+  width: 0.26rem;
+  height: 0.14rem;
+  margin-right: 0.05rem;
+  margin-top: -0.03rem;
+  content: url(./asset/resource/vip.svg);
+}
+
+.loader{
+  margin-top: 0.06rem;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+}
+.dot{
+  margin: 0.02rem;
+  background: #135AF5;
+  animation-duration: 1s;
+  animation-name: loader;
+  animation-iteration-count: infinite;
+  animation-direction: alternate
+}
+.dot:nth-child(1){
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+.dot:nth-child(2){
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+.dot:nth-child(3){
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+.dot:nth-child(4){
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}
+.dot:nth-child(5){
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+
+@keyframes loader {
+  0% {
+      width: 0.01rem;
+      height: 0.01rem;
+      border-radius: 0.01rem;
+  }
+  100% {
+      width: 0.06rem;
+      height: 0.06rem;
+      border-radius: 0.06rem;
+  }
+}
+
